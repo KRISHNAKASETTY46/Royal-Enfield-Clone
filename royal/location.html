@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <style>
+         .card-group {
+            display: flex;
+            justify-content: space-around; /* Center the card groups */
+            margin: 20px auto; /* Optional: Add margin for better appearance */
+        }
+
+        .card {
+            position: relative;
+            width: 250px; /* Adjust card width as needed */
+            height: 300px; /* Adjust card height as needed */
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Add a slight lift on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1); /* Zoom in image on hover */
+        }
+
+        .card-body {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card:hover .card-body {
+            background-color: rgba(255, 255, 255, 0.95); /* Lighten background on hover */
+        }
+
+        .card-title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            margin: 5px 0 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darken button color on hover */
+        }
+    </style>
+</head>
+<body>
+    <form action="website.html">
+        <button type="submit" name="btn">HOME</button>
+      </form>
+    <div class="card-group">
+        <div class="card">
+            <img src="dealers-landing (1).avif" class="card-img-top" alt="...">
+            <div class="card-body">
+                 <a href="https://maps.app.goo.gl/WNfDAL27R2iqJtUe8"><h5>Stores</h5></a>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="service-centre.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="https://maps.app.goo.gl/oHZUyYATopZTcsCF9"><h5>Sevice</h5></a>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="genuine-parts.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="https://maps.app.goo.gl/2M5dYjjBuTTCrtNq9"><h5>Genuine parts distributors</h5></a>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group">
+        <div class="card">
+            <img src="reown.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="https://maps.app.goo.gl/RDiFzsQKnrTJTcG67"><h5>Reown</h5></a>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="GGC-locate-us.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="https://maps.app.goo.gl/mev9xTXrKSTZXkBi7"><h5>Garage Cafe</h5></a>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="leh-service.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="https://maps.app.goo.gl/mev9xTXrKSTZXkBi7"><h5>Leh rider support</h5></a>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
